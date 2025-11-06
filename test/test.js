@@ -7,6 +7,10 @@ describe("GET /", function () {
     request(app)
       .get("/")
       .expect(200)
-      .expect("Hello, CI/CD!", done);
+      .end((err, res) => {
+        if (err) return done(err);
+        expect(res.text).to.equal("Hello, CI/CD!");
+        done();
+      });
   });
 });
