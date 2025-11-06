@@ -1,0 +1,35 @@
+{
+  "name": "say-sakpheatih-lab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ritsumeotakiri/Say-Sakpheatih-lab1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ritsumeotakiri/Say-Sakpheatih-lab1/issues"
+  },
+  "homepage": "https://github.com/Ritsumeotakiri/Say-Sakpheatih-lab1#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.39.1",
+    "chai": "^6.2.0",
+    "eslint": "8",
+    "globals": "^16.5.0",
+    "mocha": "^11.7.5",
+    "supertest": "^7.1.4"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js --config .eslintrc.json",
+    "start": "node server.js",
+    "test": "mocha --exit"
+  }
+}
