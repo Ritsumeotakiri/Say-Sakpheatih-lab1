@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: say-sakpheatih-lab1
+    env: node
+    buildCommand: yarn install
+    startCommand: yarn start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
