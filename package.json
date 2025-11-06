@@ -25,11 +25,13 @@
     "eslint": "8",
     "globals": "^16.5.0",
     "mocha": "^11.7.5",
+    "nyc": "^17.1.0",
     "supertest": "^7.1.4"
   },
   "scripts": {
     "lint": "eslint . --ext .js --config .eslintrc.json",
     "start": "node server.js",
-    "test": "mocha --exit"
+    "test": "mocha --exit",
+    "test:coverage": "nyc --reporter=html --reporter=text mocha --exit"
   }
 }
