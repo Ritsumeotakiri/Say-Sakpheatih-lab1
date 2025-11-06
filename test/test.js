@@ -1,16 +1,11 @@
 const request = require("supertest");
 const app = require("../app");
-const { expect } = require("chai");
 
 describe("GET /", function () {
-  it("should return Hello, CI/CD!", function (done) {
+  it("should return Hello, CI/CD with Pull Requests!", function (done) {
     request(app)
       .get("/")
       .expect(200)
-      .end((err, res) => {
-        if (err) return done(err);
-        expect(res.text).to.equal("Hello, CI/CD!");
-        done();
-      });
+      .expect("Hello, CI/CD with Pull Requests!", done);
   });
 });
