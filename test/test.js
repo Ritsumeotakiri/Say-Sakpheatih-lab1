@@ -2,7 +2,7 @@ const request = require("supertest");
 const app = require("../app");
 
 describe("GET /", function () {
-  it("should return Hello, CI/CD with Pull Requests!", function (done) {
+  it("should return Hello, CI/CD with Pull Requests! what upppp", function (done) {
     request(app)
       .get("/")
       .expect(200)
