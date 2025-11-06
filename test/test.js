@@ -6,6 +6,6 @@ describe("GET /", function () {
     request(app)
       .get("/")
       .expect(200)
-      .expect("Hello, CI/CD with Pull Requests! rith", done);
+      .expect("Hello, CI/CD with Pull Requests! rith koko", done);
   });
 });
