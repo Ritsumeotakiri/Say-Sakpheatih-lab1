@@ -3,7 +3,7 @@ services:
     name: say-sakpheatih-lab1
     env: node
     buildCommand: yarn install
-    startCommand: yarn start
+    startCommand: node server.js
     healthCheckPath: /
     envVars:
       - key: NODE_ENV
